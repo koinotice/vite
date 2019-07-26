@@ -462,10 +462,10 @@ func (c *Client) send(ctx context.Context, op *requestOp, msg interface{}) error
 	select {
 	case c.requestOp <- op:
 		message := msg.(*jsonrpcMessage)
-		println(message.String())
-		log.Debug("", "msg", log.Lazy{Fn: func() string {
-			return fmt.Sprint("sending ", msg)
-		}})
+		//println(message.String())
+		//log.Debug("", "msg", log.Lazy{Fn: func() string {
+		//	return fmt.Sprint("sending ", msg)
+		//}})
 		err := c.write(ctx, msg)
 		c.sendDone <- err
 		return err

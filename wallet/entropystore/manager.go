@@ -3,10 +3,10 @@ package entropystore
 import (
 	"fmt"
 	"github.com/koinotice/vite/crypto/ed25519"
+	"github.com/koinotice/vite/go-bip39"
 
 	"github.com/pkg/errors"
-	"github.com/koinotice/vite/go-bip39"
-	"github.com/koinotice/vite/common/types"
+ 	"github.com/koinotice/vite/common/types"
 	"github.com/koinotice/vite/log15"
 	"github.com/koinotice/vite/wallet/hd-bip/derivation"
 	"github.com/koinotice/vite/wallet/walleterrors"

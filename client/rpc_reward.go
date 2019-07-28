@@ -3,9 +3,8 @@ package client
 import (
 	"strconv"
 
-	"github.com/koinotice/vite/consensus"
-
 	"github.com/koinotice/vite/common/types"
+	"github.com/koinotice/vite/consensus"
 	"github.com/koinotice/vite/rpcapi/api"
 )
 

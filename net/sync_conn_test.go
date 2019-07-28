@@ -7,11 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/koinotice/vite/interfaces"
-
-	"github.com/koinotice/vite/p2p/vnode"
-
 	"github.com/koinotice/vite/common/types"
+	"github.com/koinotice/vite/interfaces"
+	"github.com/koinotice/vite/net/vnode"
 )
 
 func TestSpeedToString(t *testing.T) {
